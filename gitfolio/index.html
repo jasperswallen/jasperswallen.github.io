@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gitfolio | Jasper Swallen</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/css/gitfolio.css">
+</head>
+
+<body>
+    <div id="loading" class="">
+        <div id="spinner"></div>
+    </div>
+    <div id="profile">
+        <div id="profile_img" style="background: url(../images/ghprofpic.jpg) center;">
+        </div>
+
+        <div id="username">
+            <span style="display:block;">
+                <a href="https://github.com/jasperswallen" target="_blank" style="text-decoration:none;color:inherit">
+                    Jasper Swallen
+            </span>@jasperswallen</a>
+        </div>
+
+        <div id="userbio" style="display: block;">USC '22
+            BS in Physics and Computer Science
+        </div>
+
+        <div id="about">
+            <a href="https://jasperswallen.com" target="_blank" style="text-decoration:none;color:inherit">
+                <span style="display:block;"><i class="fas fa-link"></i> &nbsp; jasperswallen.com</span></a>
+            <span style="display:block;"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; Los Angeles, CA</span>
+        </div>
+    </div>
+    <div id="display">
+        <div id="work">
+            <h1>Work.</h1>
+            <div class="projects" id="work_section">
+                <a href="https://github.com/jasperswallen/colonel-blotto" target="_blank">
+                    <section>
+                        <div class="section_title">colonel-blotto</div>
+                        <div class="about_section">
+                            <span style="display:block;">Examining Strategies For Winning Custom Blotto Game</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; C++</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/jasperswallen/unlock-smartcar" target="_blank">
+                    <section>
+                        <div class="section_title">unlock-smartcar</div>
+                        <div class="about_section">
+                            <span style="display:block;">demonstrate using the smartcar api to unlock a car</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/jasperswallen/StackOverflow2CPP" target="_blank">
+                    <section>
+                        <div class="section_title">StackOverflow2CPP</div>
+                        <div class="about_section">
+                            <span style="display:block;">Converts StackOverflow to CPlusPlus.com</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; CSS</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        setTimeout(function () {
+            document.getElementById("loading").classList.add("animated");
+            document.getElementById("loading").classList.add("fadeOut");
+            setTimeout(function () {
+                document.getElementById("loading").classList.remove("animated");
+                document.getElementById("loading").classList.remove("fadeOut");
+                document.getElementById("loading").style.display = "none";
+            }, 600);
+        }, 800);
+    </script>
+
+</body>
+
+</html>
