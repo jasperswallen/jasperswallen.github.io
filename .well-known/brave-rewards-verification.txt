@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: jasperswallen.com
+Token: c57e510e06593b54012fc18a480cf87856b71d116de835be2d1e2d91f49536b3
