@@ -92,7 +92,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #333;
+		background: #1a1a1a;
 	}
 	/* original #312450 */
 
@@ -3503,7 +3503,7 @@ input, select, textarea {
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #333;
+		background: #1a1a1a;
 		cursor: default;
 		height: 100vh;
 		left: 0;

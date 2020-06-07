@@ -5,72 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Gitfolio | Jasper Swallen</title>
+    <title>jasperswallen</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
     <link rel="stylesheet" href="../assets/css/gitfolio.css">
+    <link rel="icon" href="https://avatars0.githubusercontent.com/u/44964970?v=4" type="image/png">
 </head>
 
 <body>
-    <div id="loading" class="">
-        <div id="spinner"></div>
-    </div>
     <div id="profile">
         <div id="profile_img" style="background: url(../images/ghprofpic.jpg) center;">
         </div>
-
-        <div id="username">
-            <span style="display:block;">
-                <a href="https://github.com/jasperswallen" target="_blank" style="text-decoration:none;color:inherit">
-                    Jasper Swallen
-            </span>@jasperswallen</a>
-        </div>
-
-        <div id="userbio" style="display: block;">USC '22
-            BS in Physics and Computer Science
-        </div>
-
+        <div id="username"><span style="display:block;">Jasper Swallen</span><a
+                href="https://github.com/jasperswallen">@jasperswallen</a></div>
+        <div id="userbio" style="display: block;">Avionics Embedded Software Simulator Developer <a
+                href="http://www.uscrpl.com/" target="_blank">@USCRPL</a></div>
         <div id="about">
-            <a href="https://jasperswallen.com" target="_blank" style="text-decoration:none;color:inherit">
-                <span style="display:block;"><i class="fas fa-link"></i> &nbsp; jasperswallen.com</span></a>
+            <span style="display:block;"><i class="fas fa-link"></i> &nbsp; <a href="../">jasperswallen.com</a></span>
             <span style="display:block;"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; Los Angeles, CA</span>
+            <div class="socials">
+                <span style="display:block;"><a href="https://www.twitter.com/JasperSwallen" target="_blank"
+                        class="socials"><i class="fab fa-twitter"></i></a></span>
+                <span style="display:block;"><a href="https://www.linkedin.com/in/jasperswallen/" target="_blank"
+                        class="socials"><i class="fab fa-linkedin-in"></i></a></span>
+            </div>
         </div>
     </div>
     <div id="display">
         <div id="work">
-            <h1>Work.</h1>
+            <h1>Repos</h1>
             <div class="projects" id="work_section">
-                <a href="https://github.com/jasperswallen/StackOverflow2CPP" target="_blank">
-                    <section>
-                        <div class="section_title">StackOverflow2CPP</div>
-                        <div class="about_section">
-                            <span style="display:block;">Converts StackOverflow to CPlusPlus.com</span>
-                        </div>
-                        <div class="bottom_section">
-                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; CSS</span>
-                            <span><i class="fas fa-star"></i>&nbsp; 1</span>
-                            <span><i class="fas fa-code-branch"></i>&nbsp; 1</span>
-                        </div>
-                    </section>
-                </a>
-
-                <a href="https://github.com/jasperswallen/jasperswallen.github.io" target="_blank">
-                    <section>
-                        <div class="section_title">jasperswallen.github.io</div>
-                        <div class="about_section">
-                            <span style="display:block;">Code for my personal website</span>
-                        </div>
-                        <div class="bottom_section">
-                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; HTML</span>
-                            <span><i class="fas fa-star"></i>&nbsp; 1</span>
-                            <span><i class="fas fa-code-branch"></i>&nbsp; 1</span>
-                        </div>
-                    </section>
-                </a>
-
                 <a href="https://github.com/jasperswallen/colonel-blotto" target="_blank">
                     <section>
                         <div class="section_title">colonel-blotto</div>
@@ -80,11 +48,62 @@
                         <div class="bottom_section">
                             <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; C++</span>
                             <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                            <span><i class="fas fa-code-branch"></i>&nbsp; 1</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
                         </div>
                     </section>
                 </a>
-
+                <a href="https://github.com/jasperswallen/jasperswallen.github.io" target="_blank">
+                    <section>
+                        <div class="section_title">jasperswallen.github.io</div>
+                        <div class="about_section">
+                            <span style="display:block;">Code for my personal website</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; CSS</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/jasperswallen/DBUG" target="_blank">
+                    <section>
+                        <div class="section_title">DBUG</div>
+                        <div class="about_section">
+                            <span style="display:block;">Fred Fish's DBUG implementation adopted from Tonu Samuel</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; C</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/jasperswallen/StackOverflow2CPP" target="_blank">
+                    <section>
+                        <div class="section_title">StackOverflow2CPP</div>
+                        <div class="about_section">
+                            <span style="display:block;">Converts StackOverflow to CPlusPlus.com</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; CSS</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/jasperswallen/uBlock-Origin-Safari" target="_blank">
+                    <section>
+                        <div class="section_title">uBlock-Origin-Safari</div>
+                        <div class="about_section">
+                            <span style="display:block;">Remake uBlock Origin as Safari App Extension</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Swift</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 41</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
                 <a href="https://github.com/jasperswallen/unlock-smartcar" target="_blank">
                     <section>
                         <div class="section_title">unlock-smartcar</div>
@@ -93,27 +112,58 @@
                         </div>
                         <div class="bottom_section">
                             <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
-                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                            <span><i class="fas fa-code-branch"></i>&nbsp; 1</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
                         </div>
                     </section>
                 </a>
-
+                <a href="https://github.com/bartowwe/HackSC_2019_Travel" target="_blank">
+                    <section>
+                        <div class="section_title">HackSC_2019_Travel</div>
+                        <div class="about_section">
+                            <span style="display:block;">HackSC 2019</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
+                <a href="https://github.com/jasperswallen/cs104-git-practice" target="_blank">
+                    <section>
+                        <div class="section_title">cs104-git-practice</div>
+                        <div class="about_section">
+                            <span style="display:none;">undefined</span>
+                        </div>
+                        <div class="bottom_section">
+                            <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; C++</span>
+                            <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                            <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                        </div>
+                    </section>
+                </a>
             </div>
         </div>
     </div>
 
-    <script type="text/javascript">
-        setTimeout(function () {
-            document.getElementById("loading").classList.add("animated");
-            document.getElementById("loading").classList.add("fadeOut");
-            setTimeout(function () {
-                document.getElementById("loading").classList.remove("animated");
-                document.getElementById("loading").classList.remove("fadeOut");
-                document.getElementById("loading").style.display = "none";
-            }, 600);
-        }, 800);
+    <script>
+        const magicProjectsGrid = new MagicGrid({
+            container: "#work_section",
+            animate: false,
+            gutter: 30, // default gutter size
+            static: true,
+            useMin: false,
+            maxColumns: 2,
+            useTransform: true
+        });
+
+
+        $("document").ready(() => {
+            magicProjectsGrid.listen();
+        });
     </script>
+
 
 </body>
 
